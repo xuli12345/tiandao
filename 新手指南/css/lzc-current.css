@@ -1,0 +1,354 @@
+/*box 主体*/
+.box {
+    overflow: hidden;
+    width: 100%;
+    text-align: center;
+    background: url("../images/inerbg.jpg") no-repeat 180px 0;
+    height: 100%;
+    position: relative;
+}
+
+/*box-left 左盒子*/
+.box-left {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 180px;
+    height: 100%;
+    background-color: #242424;
+}
+
+.nav {
+    width: 180px;
+    height: 882px;
+    background: url("../images/spr-all.png") no-repeat -185px 0;
+}
+
+/*logo*/
+.logo {
+    width: 180px;
+    height: 140px;
+    overflow: hidden;
+    background-color: rgba(255, 250, 250, 0.1);
+}
+
+.log {
+    display: block;
+    width: 131px;
+    height: 47px;
+    background: url("../images/spr-all.png") no-repeat 0 0;
+    margin-left: 28px;
+    margin-top: 37px;
+}
+
+/*navfs-version*/
+.navfs-version {
+    width: 180px;
+    height: 162px;
+    overflow: hidden;
+}
+
+.navfs-version .login {
+    display: block;
+    width: 180px;
+    height: 69px;
+    border-bottom: 1px solid #2d2d2c;
+    background-color: rgba(000, 000, 000, 0.6);
+}
+
+.navfs-version .login i {
+    display: block;
+    width: 131px;
+    height: 47px;
+    background: url("../images/spr-all.png") no-repeat 0 0;
+}
+
+.navfs-first {
+    width: 180px;
+    height: 45px;
+    border-bottom: 1px solid #2d2d2c;
+    background-color: transparent;
+}
+
+.navfs-last {
+    width: 180px;
+    height: 43px;
+    border-bottom: 3px solid #7f6f4e;
+    background-color: transparent;
+}
+
+.navfs-ul li a {
+    display: block;
+    text-align: center;
+    font-size: 14px;
+    background-color: rgba(000, 000, 000, 0.4);
+}
+
+.navfs-ul li a span {
+    margin-right: 5px;
+}
+
+.navfs-first a {
+    width: 180px;
+    height: 45px;
+    line-height: 45px;
+    color: #8a8a89;
+    background-color: rgba(000, 000, 000, 0.4);
+}
+
+.navfs-first a:hover {
+    color: #cfae69;
+}
+
+.navfs-last a {
+    width: 180px;
+    height: 43px;
+    line-height: 43px;
+    cursor: default;
+    color: #cfae69;
+}
+
+/*navfs-guide*/
+.navfs-guide {
+    width: 180px;
+    height: 300px;
+}
+
+.category {
+    display: block;
+    width: 180px;
+    height: 70px;
+    background: url("../images/spr-all.png") no-repeat 0 -47px;
+}
+
+.category i:hover {
+    background-color: rgba(255, 250, 250, 0.1);
+}
+
+.category i {
+    display: block;
+    width: 180px;
+    height: 70px;
+}
+
+/*slider*/
+.slider {
+    width: 180px;
+    height: 280px;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.slider a {
+    display: block;
+    width: 180px;
+    height: 70px;
+}
+
+.feature {
+    background: url("../images/spr-all.png") no-repeat 0 -117px;
+}
+
+.world {
+    background: url("../images/spr-all.png") no-repeat 0 -187px;
+}
+
+.maps {
+    background: url("../images/spr-all.png") no-repeat 0 -257px;
+}
+
+.league {
+    background: url("../images/spr-all.png") no-repeat 0 -327px;
+}
+
+.slider a i {
+    display: block;
+    width: 180px;
+    height: 70px;
+}
+
+.slider a i:hover {
+    background-color: rgba(255, 250, 250, 0.1);
+}
+
+/*ewm*/
+.ewm {
+    margin-top: 15px;
+    width: 180px;
+}
+
+.pic {
+    display: block;
+    width: 120px;
+    height: 120px;
+    margin: 0 auto;
+}
+
+#togw {;
+    width: 100px;
+    height: 30px;
+    margin-top: 45px;
+    margin-left: 39px;
+    border: 1px solid #77694a;
+    position: relative;
+    background-color: #63563a;
+}
+
+.l_t,
+.r_t,
+.l_b,
+.r_b {
+    position: absolute;
+    width: 4px;
+    height: 4px;
+    background-color: #232323;
+}
+
+.l_t {
+    left: -1px;
+    top: -1px;
+    border-bottom: 1px solid #77694a;
+    border-right: 1px solid #77694a;
+}
+
+.r_t {
+    right: -1px;
+    top: -1px;
+    border-bottom: 1px solid #77694a;
+    border-left: 1px solid #77694a;
+}
+
+.l_b {
+    left: -1px;
+    top: 26px;
+    border-top: 1px solid #77694a;
+    border-right: 1px solid #77694a;
+}
+
+.r_b {
+    right: -1px;
+    top: 26px;
+    border-top: 1px solid #77694a;
+    border-left: 1px solid #77694a;
+}
+
+#togw-gw {
+    display: block;
+    width: 100px;
+    height: 30px;
+    position: relative;
+}
+
+a#togw-gw:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+#togw-gw #l_tt {
+    width: 10px;
+    height: 14px;
+    background: url("../images/spr-all.png") no-repeat 0 -762px;
+    position: absolute;
+    left: 17px;
+    top: 8px;
+}
+
+#togw-gw span {
+    position: absolute;
+    font-size: 13px;
+    line-height: 13px;
+    top: 8px;
+    left: 30px;
+    color: #ffffff;
+}
+
+/*footer_ied 底部*/
+#footer_ied {
+    height: 114px;
+    background-color: #000000;
+    font-size: 12px;
+    color: #818181;
+    text-align: center;
+    overflow: hidden;
+}
+
+#footer_ied a {
+    color: #818181;
+}
+
+.wrap_ied {
+    margin: 30px auto 0;
+}
+
+.wrap_ied p {
+    line-height: 18px;
+}
+
+/*box-right 右盒子*/
+.box-right {
+    float: left;
+    width: 100%;
+    height: 100%;
+}
+
+.header {
+    position: relative;
+    width: 100%;
+    height: 182px;
+    margin-left: 320px;
+    padding-top: 90px;
+    text-align: left;
+}
+.slogo {
+    height: 88px;
+    background: url("../images/spr-all.png") no-repeat -403px 0;
+    text-indent: -9999px;
+    color: #40c7aa;
+    font-weight: bold;
+}
+.snav {
+    position: relative;
+    top: 0;
+    margin-top: 35px;
+    width: 760px;
+    line-height: 58px;
+    font-size: 15px;
+    height: 58px;
+    z-index: 100;
+}
+.snav .cate {
+    position: relative;
+    float: left;
+    width: 151px;
+    border-right: 1px solid #e1e1e1;
+    text-align: center;
+    color: #aeaeae;
+    background: #f0f2f2;
+}
+.snav .serial {
+    margin-right: 10px;
+}
+.sn{
+    position: relative;
+    float: left;
+    width: 151px;
+    border-right: 1px solid #e1e1e1;
+    text-align: center;
+    background: #40c7aa;
+    color: #fff;
+}
+.snav a.vg {
+    border-right: none;
+    width: 152px;
+}
+
+.md::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    bottom: 0;
+    left: 50%;
+    margin: 0 0 -6px -6px;
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    border-top: 6px solid #40c7aa;
+}

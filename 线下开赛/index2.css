@@ -1,0 +1,815 @@
+/*页面2*/
+body,
+div,
+span,
+p,
+a,
+img,
+input,
+ul,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+strong,
+em,
+i,
+del,
+ins,
+dl,
+dt,
+dd {
+    margin: 0;
+    padding: 0;
+}
+li {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+body {
+    font: 12px/100% "微软雅黑"
+}
+input {
+    border: none;
+    outline: none;
+}
+img {
+    border: none;
+    vertical-align: middle;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-weight: normal;
+}
+i {
+    font-style: normal;
+}
+.clearfix::after {
+    content: ".";
+    display: block;
+    clear: both;
+    height: 0;
+    visibility: hidden;
+}
+.clearfix {
+    *zoom: 1;
+}
+.w {
+    width: 1285px;
+    margin: 0 auto;
+}
+.shell{
+    width: 1366px;
+    margin: 0 auto;
+}
+
+/*顶部开始*/
+/*广告位置*/
+
+
+/* 顶部通栏 */
+.topbar {
+    height: 40px;
+    background-color: #fff;
+    border-bottom: 1px solid #c9c9c9;
+}
+
+.topbarCenter {
+    height: 40px;
+    position: relative;
+}
+
+/*腾讯游戏logo位置*/
+.tencentGameLogo {
+    width: 220px;
+    height: 40px;
+    background: url(./image/jinglingtu.png) 0 -39px;
+    position: absolute;
+    left: 150px;
+    z-index: 2;
+}
+
+.tencentGameLogo a {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+/*广告位置*/
+.guangGao {
+    position: absolute;
+    left: 370px;
+}
+
+.guangGao .bigGg {
+    position: absolute;
+    top: 0;
+    left: -220px;
+    z-index: 1;
+    display: none;
+}
+
+/*成长守护平台*/
+.chengZhang {
+    width: 94px;
+    height: 100%;
+    line-height: 40px;
+    position: absolute;
+    left: 900px;
+}
+
+.chengZhang a i {
+    color: #464646;
+}
+
+.chengZhang a i:hover {
+    color: red;
+}
+
+.chengZhang img {
+    margin-right: 2px;
+}
+
+/*腾讯游戏排行榜*/
+.paiHangBang {
+    width: 100px;
+    height: 40px;
+    line-height: 40px;
+    position: absolute;
+    left: 1020px;
+}
+
+.paiHangBang:hover i.text {
+    color: red;
+}
+
+.paiHangBang:hover i.pic {
+    background: url(./image/jinglingtu.png) -170px -134px;
+}
+
+.paiHangBang .text {
+    color: #464646;
+    float: left;
+}
+
+.paiHangBang .pic {
+    float: right;
+    display: block;
+    width: 11px;
+    height: 11px;
+    margin-left: 5px;
+    margin-top: 15px;
+    background: url(./image/jinglingtu.png) -150px -134px;
+}
+
+/*游戏排行榜弹窗部分*/
+.paiHangBang .Leaderboard {
+    width: 695px;
+    height: 436px;
+    background-color: #fff;
+    border: 1px solid #cccccc;
+    position: absolute;
+    top: 38px;
+    left: -596px;
+    z-index: 3;
+    display: none;
+}
+
+/*小三角形*/
+.sanJiaoXing {
+    font-size: 20px;
+    color: #cccccc;
+    position: absolute;
+    top: -22px;
+    left: 683px;
+    z-index: 4;
+}
+
+
+/*新游排行榜*/
+.Leaderboard .newGame {
+    width: 231px;
+    height: 436px;
+    background-color: #fff;
+    position: absolute;
+}
+
+.Leaderboard h4+a:hover {
+    color: red;
+    text-decoration: underline;
+}
+
+.Leaderboard h4 {
+    color: #555555;
+    height: 12px;
+    line-height: 12px;
+    position: absolute;
+    top: 20px;
+    left: 10px;
+}
+
+.Leaderboard a.more {
+    color: #707e91;
+    height: 12px;
+    line-height: 12px;
+    position: absolute;
+    top: 21px;
+    left: 180px;
+}
+
+.Leaderboard hr {
+    color: #e5e5e5;
+    display: block;
+    width: 212px;
+    position: absolute;
+    top: 37px;
+    left: 10px;
+}
+
+.Leaderboard i.paiMing {
+    color: #999999;
+    height: 12px;
+    line-height: 12px;
+    position: absolute;
+    top: 50px;
+    left: 10px;
+}
+
+.Leaderboard i.game {
+    color: #999999;
+    height: 12px;
+    line-height: 12px;
+    position: absolute;
+    top: 50px;
+    left: 43px;
+}
+
+/*游戏内容*/
+.Leaderboard ul {
+    width: 198px;
+    height: 380px;
+    position: absolute;
+    top: 76px;
+    left: 14px;
+}
+
+.Leaderboard ul li {
+    width: 198px;
+    height: 27px;
+}
+
+/*小盒子*/
+.Leaderboard ul li .zoomOut {
+    width: 198px;
+    height: 27px;
+    position: absolute;
+}
+
+/*高排名的num样式*/
+.Leaderboard ul li i.numHeight {
+    display: block;
+    width: 14px;
+    height: 14px;
+    background-color: #ff4e00;
+    font-size: 8px;
+    color: #fff;
+    text-align: center;
+    line-height: 14px;
+    position: absolute;
+    z-index: 1;
+}
+
+/*低排名的num样式*/
+.Leaderboard ul li i.numLow {
+    display: block;
+    width: 13px;
+    height: 13px;
+    border: 1px solid #999999;
+    font-size: 8px;
+    color: #999999;
+    text-align: center;
+    line-height: 14px;
+    position: absolute;
+    z-index: 1;
+}
+
+.Leaderboard ul li i.gameName {
+    font-size: 8px;
+    color: #707e91;
+    line-height: 8px;
+    position: absolute;
+    top: 3px;
+    left: 29px;
+}
+
+/*大盒子*/
+.Leaderboard ul li .zoom {
+    width: 196px;
+    height: 84px;
+    border: 1px solid #cccccc;
+    position: absolute;
+    display: none;
+    overflow: hidden;
+}
+
+.Leaderboard ul li .zoom img {
+    position: absolute;
+    top: 1px;
+    left: 1px;
+}
+
+.Leaderboard ul li .zoom .botBar {
+    width: 194px;
+    height: 28px;
+    background-color: black;
+    opacity: 0.8;
+    position: absolute;
+    top: 55px;
+    left: 1px;
+}
+
+.Leaderboard ul li .zoom .botBar .guanWang {
+    color: #aaaaaa;
+    line-height: 12px;
+    position: absolute;
+    top: 7px;
+    left: 20px;
+}
+
+.Leaderboard ul li .zoom .botBar .guanWang:hover {
+    color: red;
+}
+
+.Leaderboard ul li .zoom .botBar .downLoad {
+    color: #aaaaaa;
+    line-height: 12px;
+    position: absolute;
+    top: 7px;
+    right: 20px;
+}
+
+.Leaderboard ul li .zoom .botBar .downLoad:hover {
+    color: red;
+}
+
+/*分割线1*/
+.line1 {
+    width: 1px;
+    height: 402px;
+    background-color: #e2e2e2;
+    position: absolute;
+    top: 17px;
+    left: 231px;
+}
+
+/*热门游戏排行榜*/
+.Leaderboard .hotGame {
+    width: 231px;
+    height: 436px;
+    background-color: #fff;
+    position: absolute;
+    left: 232px;
+}
+
+/*分割线2*/
+.line2 {
+    width: 1px;
+    height: 402px;
+    background-color: #e2e2e2;
+    position: absolute;
+    top: 17px;
+    left: 463px;
+}
+
+/*新品手游排行榜*/
+.Leaderboard .newMobileGame {
+    width: 231px;
+    height: 436px;
+    background-color: #fff;
+    position: absolute;
+    left: 464px;
+}
+
+/*顶部通栏*/
+/*.top {*/
+    /*height: 41px;*/
+    /*width: 100%;*/
+    /*background-color: #fff;*/
+/*}*/
+
+/*顶部结束*/
+/*loho部分开始*/
+.logo {
+    width: 1366px;
+    height: 60px;
+    background-color: #171717;
+    position: relative;
+    margin: 0 auto;
+}
+.logo .top_logo {
+    width: 100px;
+    height: 35px;
+    position: absolute;
+    top: 50%;
+    left: 20px;
+    margin: -15px 0 0;
+    background-image: url(./image/blacktop-spr.png);
+    background-position: 0 100%;
+}
+.logo .right {
+    float: right;
+    color: white;
+    font-size: 14px;
+}
+.logo .right a {
+    color: white;
+}
+.logo .right p {
+    float: left;
+    line-height: 60px;
+    margin-right: 26px;
+}
+.logo .right div {
+    float: left;
+}
+.logo div.return,
+.logo div.active {
+    width: 104px;
+    height: 30px;
+    border: 2px solid #2FC3A3;
+    border-radius: 15px;
+    margin-top: 13px;
+    line-height: 30px;
+}
+.logo div.active {
+    margin-right: 12px;
+    margin-left: 10px;
+}
+.logo div.return span {
+    width: 16px;
+    height: 17px;
+    display: inline-block;
+    background-image: url(./image/blacktop-spr.png);
+    background-position: -167px -83px;
+    background-repeat: no-repeat;
+    /*margin-top: 8px;*/
+    margin-left: 15px;
+    margin-right: 6px;
+    vertical-align: middle;
+}
+.logo div.active span {
+    width: 13px;
+    height: 17px;
+    display: inline-block;
+    background-image: url(./image/blacktop-spr.png);
+    background-position: -167px -143px;
+    background-repeat: no-repeat;
+    /*margin-top: 8px;*/
+    margin-left: 15px;
+    vertical-align: middle;
+    margin-right: 6px;
+}
+/*loho部分结束*/
+
+/*主体部分开始*/
+.main {
+    width: 100%;
+    /*background-size: 100%;*/
+    height: 1799px;
+    margin: 0 auto;
+    background: url(./image/rp1.png) no-repeat center;
+    /*background-repeat: no-repeat;*/
+    position: relative;
+}
+.main .juesai {
+    /*background-image: url(./image/hd.jpg);*/
+    width: 700px;
+    height: auto;
+    /*background-size: 70%*/
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 50%;
+    /*top: 150px;*/
+    margin-left: -350px;
+}
+.main .main_logo {
+    width: 216px;
+    height: 76px;
+    background-image: url(./image/sprite-img.png);
+    background-position: -1063px -86px;
+    position: absolute;
+    top: 72px;
+    left: 50%;
+    margin-left: -108px;
+}
+.main a {
+    font-size: 20px;
+    color: #242324;
+    margin-right: 66px;
+    text-decoration: underline;
+}
+.main .jingcai {
+    position: absolute;
+    left: 50%;
+    margin-left: -162px;
+    top: 530px;
+}
+.main .time {
+    background-image: url(./image/sprite-img.png);
+    background-position: -487px -422px;
+    width: 847px;
+    height: 35px;
+    position: absolute;
+    left: 50%;
+    margin-left: -423px;
+    top: 626px;
+    line-height: 35px;
+}
+.main .time p {
+    float: left;
+    font-size: 20px;
+    color: #ffffff;
+}
+.main .time p span {
+    color: #f2c159;
+}
+.main .time p.p1 {
+    margin-left: 19px;
+    margin-right: 110px;
+}
+video {
+    width: 847px;
+    height: 477px;
+    position: absolute;
+    /*border: 1px solid red;*/
+    left: 50%;
+    margin-left: -424px;
+    top: 677px;
+}
+.main .zb {
+    width: 750px;
+    height: 68px;
+    position: absolute;
+    left: 50%;
+    margin-left: -375px;
+    top: 1196px;
+}
+.main .zb li {
+    width: 233px;
+    height: 68px;
+    float: left;
+    margin-right: 24px;
+}
+.main .zb li.xm {
+    margin-right: 0;
+}
+.main .zb a {
+    display: inline-block;
+    width: 233px;
+    height: 68px;
+}
+.main .dy a {
+    background-image: url(./image/sprite-img.png);
+    background-position: -804px -631px;
+}
+.main .TGA a {
+    background-image: url(./image/sprite-img.png);
+    background-position: -326px -705px;
+}
+.main .xm a {
+    background-image: url(./image/sprite-img.png);
+    background-position: -1211px -303px;
+}
+.main .shier {
+    width: 1001px;
+    height: 40px;
+    background-image: url(./image/sprite-img.png);
+    background-position: -326px -541px;
+    position: absolute;
+    left: 50%;
+    margin-left: -500px;
+    top: 1363px;
+}
+/*十二大高手开始*/
+.gaoshou {
+    width: 980px;
+    height: 598px;
+    position: absolute;
+    left: 50%;
+    margin-left: -490px;
+    top: 1431px;
+}
+.gaoshou li {
+    width: 158px;
+    height: 284px;
+    background-image: url(./image/sprite-img.png);
+    background-position: -163px -541px;
+    text-align: center;
+    float: left;
+    margin-right: 4px;
+    margin-bottom: 15px;
+}
+.gaoshou li a {
+    text-decoration: none;
+}
+.gaoshou li .num1 {
+    font-size: 24px;
+    color: #909296;
+}
+.gaoshou li .num2 {
+    font-size: 20px;
+    font-weight: 700;
+    color: #0e1512;
+    margin-top: 30px;
+}
+.gaoshou li span {
+    display: block;
+    font-size: 16px;
+    color: #0e1312;
+}
+.gaoshou li .num3 {
+    margin-top: 15px;
+    margin-bottom: 12px;
+}
+.gaoshou li .num4 {
+    margin-top: 12px;
+    margin-bottom: 12px;
+}
+.main_foot {
+    width: 750px;
+    height: 68px;
+    position: absolute;
+    left: 50%;
+    margin-left: -375px;
+    bottom: -325px;
+}
+.main_foot li {
+    width: 233px;
+    height: 68px;
+    float: left;
+    margin-right: 24px;
+}
+.main_foot li.jl {
+    margin-right: 0;
+}
+.main_foot li a {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.main_foot .jc a {
+    background-image: url(./image/sprite-img.png);
+    background-position: -326px -631px;
+}
+.main_foot .cx a {
+    background-image: url(./image/sprite-img.png);
+    background-position: -564px -631px;
+}
+.main_foot .jl a {
+    background-image: url(./image/sprite-img.png);
+    background-position: -971px -302px;
+}
+/*十二大高手结束*/
+
+
+
+/*下部分背景*/
+.bj {
+    /*width: 1366px;*/
+    width: 100%;
+    height: 1478px;
+    background-image: url(./image/rp2.jpg);
+    margin: 0 auto;
+    overflow: hidden;
+}
+.bj .bj1 {
+    width: 836px;
+    height: 81px;
+    background-image: url(./image/sprite-img.png);
+    background-position: -487px -216px;
+    margin: 437px auto 0px auto;
+}
+.bj .guize {
+    width: 960px;
+    margin: 38px auto 0 auto;
+}
+.bj .gz_list {
+    font-size: 22px;
+    font-weight: 700;
+    color: #666;
+    margin-bottom: 15px;
+}
+.bj li {
+    float: left;
+}
+.bj  i {
+    float: left;
+    text-align: center;
+    line-height: 20px;
+    font-size: 12px;
+    color: #fff;
+    margin: 3px 5px 0 0;
+    width: 20px;
+    height: 20px;
+    background-image: url(./image/sprite-img.png);
+    background-position: -1284px -132px;
+    vertical-align: middle;
+}
+.bj .guize ul span {
+    float: left;
+    font-size: 16px;
+    line-height: 30px;
+    width: 935px;
+    color: #666;
+}
+.bj .gift {
+    width: 1001px;
+    height: 40px;
+    background-image: url(./image/sprite-img.png);
+    background-position: -326px -586px;
+    margin: 214px auto 0 auto;
+}
+.bj .gift_list {
+    width: 835px;
+    height: 232px;
+    margin: 45px auto 25px;
+}
+.bj .gift_list li {
+    width: 147px;
+    float: left;
+    margin-right: 19px;
+}
+.bj .gift_list li img {
+    width: 158px;
+    height: 143px;
+}
+.bj .gift_list li span {
+    display: block;
+    margin: 10px auto;
+    color: #666666;
+    font-size: 16px;
+    text-align: center;
+}
+.bj .gift_list li a {
+    background-image: url(./image/sprite-img.png);
+    background-position: -1284px -86px;
+    width: 158px;
+    height: 41px;
+    display: block;
+    text-align: center;
+    line-height: 41px;
+    font-size: 18px;
+    color: #fff;
+}
+.bj .select {
+    width: 880px;
+    line-height: 35px;
+    font-size: 16px;
+    color: #666;
+    margin: 0 auto;
+}
+.bj .select span {
+    color: #c79555;
+}
+.bj .tishi {
+    width: 962px;
+    margin: 49px auto 40px auto;
+}
+.bj .aaa {
+    color: #c59532;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 26px;
+}
+.bj .ccc {
+    color: #666;
+    font-size: 16px;
+    line-height: 26px;
+}
+.footer {
+    width: 1366px;
+    height: 60px;
+    background: #0e0e0e;
+    color: #6a6a6a;
+    padding: 20px 0;
+    margin: 0 auto;
+
+}
+.footer p {
+    text-align: center;
+    line-height: 20px;
+}
+.footer a {
+    color: #6a6a6a;
+}
+/*下部分背景结束*/
+
+/*主体部分结束*/

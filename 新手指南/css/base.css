@@ -1,0 +1,58 @@
+body,
+div,
+span,
+a,
+p,
+img,
+input,
+ul,
+li,
+h1,
+h2,
+h3,
+h4,
+i,
+em,
+del,
+strong,
+ins {
+    margin: 0;
+    padding: 0;
+}
+a {
+    text-decoration: none;
+    color: #000;
+}
+img {
+    border: none;
+    vertical-align: middle;
+}
+input {
+    border: none;
+    outline: none;
+}
+li {
+    list-style: none;
+}
+h1,
+h2,
+h3,
+h4 {
+    font-weight: normal;
+}
+i {
+    font-style: normal;
+}
+body {
+    font: 12px/100% "Î¢ÈíÑÅºÚ";
+}
+.clearfix::after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+.clearfix {
+    *zoom: 1;
+}

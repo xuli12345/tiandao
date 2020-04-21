@@ -1,0 +1,448 @@
+
+body {
+	background-color: #0e0e0e;
+}
+
+.w {
+	width: 1200px;
+	margin: 0 auto;
+    /*overflow: hidden;*/
+}
+
+/*顶部logo部分的开始*/
+.top {
+	height: 60px;
+	background-color: #000;
+    /*这里设置了overflow:hidden是为了消除底部的滑动条*/
+    overflow: hidden;
+}
+
+.logo {
+	width: 100px;
+	height: 35px;
+	background: url("../images/blacktop-spr.png") no-repeat left bottom;
+	float: left;
+	margin-top: 12px;
+	text-indent: -9999px;
+}
+
+.top_r {
+	float: right;
+	width: 255px;
+	height: 48px;
+	padding-top: 12px;
+	font-size: 14px;
+}
+
+.top_r ul {
+	height: 34px;
+	width: 255px;
+}
+
+.top_r li {
+	float: left;
+	width: 113px;
+	height: 30px;
+	margin-left: 10px;
+	border: 2px solid #2fc3a3;
+	border-radius: 17px;
+}
+
+.top_r a {
+	display: block;
+	color: #fff;
+	width: 100%;
+	height: 100%;
+	padding-left: 40px;
+	line-height: 30px;
+}
+
+.top_r .to_home {
+	background: url("../images/blacktop-spr.png") no-repeat -150px -75px;
+}
+
+.top_r .to_activity {
+	background: url("../images/blacktop-spr.png") no-repeat -150px -134px;
+}
+/*顶部logo部分的结束*/
+
+/*主体部分的开始*/
+.main {
+	height: auto;
+	background: url("../images/rp.jpg") no-repeat 50% 0;
+	min-width: 1200px;
+}
+
+.main_up {
+	background: url("../images/hd.jpg");
+	width: 1200px;
+	height: 843px;
+	position: relative;
+}
+
+.main_up h1 {
+	background: url("../images/sl.png") no-repeat;
+	width: 693px;
+	height: 470px;
+	position: absolute;
+	top:-500px;
+	left: 231px;
+	text-indent: -9999px;
+}
+
+.main_down {
+	background: url("../images/ct.jpg");
+	width: 1200px;
+	padding-bottom: 100px;
+}
+
+.part1 {
+	position: relative;
+	/*width: 1200px;*/
+	height: 600px;
+    display: none;
+}
+
+/*第一个视频*/
+.part1 .video {
+	width: 850px;
+	height: 480px;
+	position: fixed;
+	top: 20%;
+	left: 50%;
+	margin-left: -425px;
+	z-index: 15;
+	display: none;
+}
+
+.part1 video {
+	width: 100%;
+	height: 100%;
+}
+
+.part1 .close {
+	position: absolute;
+	width: 50px;
+	height: 50px;
+	font-size: 60px;
+	text-align: center;
+	line-height: 40px;
+	top: 0;
+	right: -50px;
+	color: #fff;
+	background-color: rgba(255,0,0,.8);
+}
+
+.part1 .bg1 {
+	background: url("../images/bg1.png") no-repeat;
+	width: 366px;
+	height: 417px;
+	padding-left: 388px;
+	padding-top: 86px;
+	position: relative;
+}
+
+.part1 .bg1 a {
+	display: block;
+	width: 308px;
+	height: 208px;
+	z-index: 10;
+	position: relative;
+}
+
+.part1 .bg1 a img {
+	width: 308px;
+	height: 208px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	transition: all 1s;
+}
+
+.part1 .bg1 a img:hover {
+	transform: scale(1.1);
+}
+
+.part1 .bg1 p {
+	width: 308px;
+	font-size: 14px;
+	line-height: 20px;
+	padding-top: 20px;
+	text-align: center;
+	color: #fff;
+}
+
+.part1 .bg1 span {
+	color: #cfae69;
+}
+
+.part1 img {
+	width: 973px;
+	height: 1054px;
+	position: absolute;
+	top: -15px;
+	right: -360px;
+}
+
+.part2 {
+	position: relative;
+	height: 740px;
+    display: none;
+}
+
+.bg2 {
+	background: url("../images/bg2.png") no-repeat;
+	width: 1785px;
+	height: 944px;
+	position: absolute;
+	top: 42px;
+	left: -253px;
+}
+
+.bg2 img {
+	position: absolute;
+	top: 118px;
+	left: 725px;
+	transition: all 1s;
+}
+
+.bg2 img:hover {
+    transform: scale(1.2);
+}
+
+.part3 {
+	width: 1200px;
+	height: 470px;
+    left: -1800px;
+	position: relative;
+	background: url("../images/bg3.png") no-repeat;
+}
+
+.part3 a {
+	/*超出部分不隐藏,会显示在边框外面*/
+	overflow: visible;
+}
+
+.part3 .pic1 {
+	width: 262px;
+	height: 456px;
+	position: absolute;
+	top: 56px;
+	left: 403px;
+}
+
+.part3 .pic2 {
+	width: 282px;
+	height: 474px;
+	position: absolute;
+	top: -55px;
+	left: 633px;
+}
+
+.part3 .pic3 {
+	width: 246px;
+	height: 461px;
+	position: absolute;
+	top: -102px;
+	right: 22px;
+}
+
+.part3 img {
+	opacity: 0.6;
+	transition: all 1s;
+}
+
+.part3 img:hover {
+	opacity: 1;
+	transform: scale(1.1);
+}
+
+/*第二个视频*/
+.part3 .video {
+	width: 850px;
+	height: 480px;
+	position: fixed;
+	top: 20%;
+	left: 50%;
+	margin-left: -425px;
+	z-index: 15;
+	display: none;
+}
+
+.part3 video {
+	width: 100%;
+	height: 100%;
+}
+
+.part3 .close {
+	position: absolute;
+	width: 50px;
+	height: 50px;
+	font-size: 60px;
+	text-align: center;
+	line-height: 40px;
+	top: 0;
+	right: -50px;
+	color: #fff;
+	background-color: rgba(255,0,0,.8);
+}
+
+.part4 {
+    width: 1200px;
+    height: 585px;
+    padding-top: 155px;
+    opacity: 0.1;
+}
+
+.part4 .left {
+    width: 898px;
+    height: 585px;
+    float: left;
+    position: relative;
+}
+
+.part4 .group {
+    width: 136px;
+    height: 585px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+}
+
+.part4 .group .now {
+    width: 137px;
+    height: 65px;
+    background: url("../images/sp.png") no-repeat -5px -3px;
+}
+
+.part4 .group li {
+    width: 132px;
+    height: 64px;
+    border-bottom: 1px solid #587294;
+    background-color: #365277;
+}
+
+.part4 .group li a {
+    display: block;
+    font-size: 20px;
+    text-align: center;
+    line-height: 65px;
+    color: #fff;
+}
+
+.part4 .role {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.role li {
+    /*float: left;*/
+    display: none;
+}
+
+.role .current {
+    display: block;
+}
+
+.role .sex {
+    width: 38px;
+    height: 219px;
+    position: absolute;
+    bottom: 16px;
+    right: 19px;
+    z-index: 10;
+}
+
+.role .sex a {
+    display: block;
+    width: 18px;
+    height: 23px;
+    line-height: 23px;
+    padding: 25px 10px;
+    font-size: 16px;
+    color: #fff;
+    text-align: center;
+    overflow: hidden;
+}
+
+.role .sex a.on1 {
+    line-height: 23px;
+    padding: 25px 10px;
+}
+
+/*设置默认性别项*/
+.role .sex .df {
+    background: url("../images/sp.png") no-repeat -79px -74px;
+}
+
+.s1 {
+    background: url("../images/sp.png") no-repeat -1px -74px;
+}
+
+.role .sex .btn1 {
+    background: url("../images/sp.png") no-repeat -79px -74px;
+}
+
+.role .sex .s2 {
+    background: #000;
+}
+
+.btn2 {
+    background: #365277;
+}
+
+.role .sex a:last-child {
+    padding: 20px 10px 30px;
+    line-height: 18px;
+}
+
+.role .sex .s3 {
+    background: url("../images/sp.png") no-repeat -40px -74px;
+}
+
+.btn3 {
+    background: url("../images/sp.png") no-repeat -118px -74px;
+}
+
+.role .num img {
+    display: none;
+}
+
+.role .num img.activity {
+    display: block;
+}
+
+.part4 .right {
+    float: right;
+}
+/*主体部分的结束*/
+
+/*底部的开始*/
+.footer {
+	padding: 20px 0;
+	text-align: center;
+	line-height: 20px;
+	background-color: #0e0e0e;
+	color: #6a6a6a;
+}
+
+.footer a {
+	color: #6a6a6a;
+}
+/*底部的开始*/
+
+.spzhc {
+	width: 100%;
+	height: 3700px;
+	position: absolute;
+	left: 0;
+	top: 0;
+	background-color: #000000;
+	opacity: 0.6;
+	z-index: 14;
+	display: none;
+}

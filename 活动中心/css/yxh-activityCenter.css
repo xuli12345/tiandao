@@ -1,0 +1,649 @@
+/* 这是活动中心专用的css文件 */
+
+/* 顶部通栏 */
+.topbar {
+    height: 40px;
+    background-color: #fff;
+    border-bottom: 1px solid #c9c9c9;
+}
+
+.topbarCenter {
+    height: 40px;
+    position: relative;
+}
+
+/*腾讯游戏logo位置*/
+.tencentGameLogo {
+    width: 220px;
+    height: 40px;
+    background: url(../images/jinglingtu.png) 0 -39px;
+    position: absolute;
+    left: 150px;
+    z-index: 2;
+}
+
+.tencentGameLogo a {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+/*广告位置*/
+.guangGao {
+    position: absolute;
+    left: 370px;
+}
+
+.guangGao .bigGg {
+    position: absolute;
+    top: 0;
+    left: -220px;
+    z-index: 1;
+    display: none;
+}
+
+/*成长守护平台*/
+.chengZhang {
+    width: 94px;
+    height: 100%;
+    line-height: 40px;
+    position: absolute;
+    left: 900px;
+}
+
+.chengZhang a i {
+    color: #464646;
+}
+
+.chengZhang a i:hover {
+    color: red;
+}
+
+.chengZhang img {
+    margin-right: 2px;
+}
+
+/*腾讯游戏排行榜*/
+.paiHangBang {
+    width: 100px;
+    height: 40px;
+    line-height: 40px;
+    position: absolute;
+    left: 1020px;
+}
+
+.paiHangBang:hover i.text {
+    color: red;
+}
+
+.paiHangBang:hover i.pic {
+    background: url(../images/jinglingtu.png) -170px -134px;
+}
+
+.paiHangBang .text {
+    color: #464646;
+    float: left;
+}
+
+.paiHangBang .pic {
+    float: right;
+    display: block;
+    width: 11px;
+    height: 11px;
+    margin-left: 5px;
+    margin-top: 15px;
+    background: url(../images/jinglingtu.png) -150px -134px;
+}
+
+/*游戏排行榜弹窗部分*/
+.paiHangBang .Leaderboard {
+    width: 695px;
+    height: 436px;
+    background-color: #fff;
+    border: 1px solid #cccccc;
+    position: absolute;
+    top: 38px;
+    left: -596px;
+    z-index: 3;
+    display: none;
+}
+
+/*小三角形*/
+.sanJiaoXing {
+    font-size: 20px;
+    color: #cccccc;
+    position: absolute;
+    top: -22px;
+    left: 683px;
+    z-index: 4;
+}
+
+
+/*新游排行榜*/
+.Leaderboard .newGame {
+    width: 231px;
+    height: 436px;
+    background-color: #fff;
+    position: absolute;
+}
+
+.Leaderboard h4+a:hover {
+    color: red;
+    text-decoration: underline;
+}
+
+.Leaderboard h4 {
+    color: #555555;
+    height: 12px;
+    line-height: 12px;
+    position: absolute;
+    top: 20px;
+    left: 10px;
+}
+
+.Leaderboard a.more {
+    color: #707e91;
+    height: 12px;
+    line-height: 12px;
+    position: absolute;
+    top: 21px;
+    left: 180px;
+}
+
+.Leaderboard hr {
+    color: #e5e5e5;
+    display: block;
+    width: 212px;
+    position: absolute;
+    top: 37px;
+    left: 10px;
+}
+
+.Leaderboard i.paiMing {
+    color: #999999;
+    height: 12px;
+    line-height: 12px;
+    position: absolute;
+    top: 50px;
+    left: 10px;
+}
+
+.Leaderboard i.game {
+    color: #999999;
+    height: 12px;
+    line-height: 12px;
+    position: absolute;
+    top: 50px;
+    left: 43px;
+}
+
+/*游戏内容*/
+.Leaderboard ul {
+    width: 198px;
+    height: 380px;
+    position: absolute;
+    top: 76px;
+    left: 14px;
+}
+
+.Leaderboard ul li {
+    width: 198px;
+    height: 27px;
+}
+
+/*小盒子*/
+.Leaderboard ul li .zoomOut {
+    width: 198px;
+    height: 27px;
+    position: absolute;
+}
+
+/*高排名的num样式*/
+.Leaderboard ul li i.numHeight {
+    display: block;
+    width: 14px;
+    height: 14px;
+    background-color: #ff4e00;
+    font-size: 8px;
+    color: #fff;
+    text-align: center;
+    line-height: 14px;
+    position: absolute;
+    z-index: 1;
+}
+
+/*低排名的num样式*/
+.Leaderboard ul li i.numLow {
+    display: block;
+    width: 13px;
+    height: 13px;
+    border: 1px solid #999999;
+    font-size: 8px;
+    color: #999999;
+    text-align: center;
+    line-height: 14px;
+    position: absolute;
+    z-index: 1;
+}
+
+.Leaderboard ul li i.gameName {
+    font-size: 8px;
+    color: #707e91;
+    line-height: 8px;
+    position: absolute;
+    top: 3px;
+    left: 29px;
+}
+
+/*大盒子*/
+.Leaderboard ul li .zoom {
+    width: 196px;
+    height: 84px;
+    border: 1px solid #cccccc;
+    position: absolute;
+    display: none;
+    overflow: hidden;
+}
+
+.Leaderboard ul li .zoom img {
+    position: absolute;
+    top: 1px;
+    left: 1px;
+}
+
+.Leaderboard ul li .zoom .botBar {
+    width: 194px;
+    height: 28px;
+    background-color: black;
+    opacity: 0.8;
+    position: absolute;
+    top: 55px;
+    left: 1px;
+}
+
+.Leaderboard ul li .zoom .botBar .guanWang {
+    color: #aaaaaa;
+    line-height: 12px;
+    position: absolute;
+    top: 7px;
+    left: 20px;
+}
+
+.Leaderboard ul li .zoom .botBar .guanWang:hover {
+    color: red;
+}
+
+.Leaderboard ul li .zoom .botBar .downLoad {
+    color: #aaaaaa;
+    line-height: 12px;
+    position: absolute;
+    top: 7px;
+    right: 20px;
+}
+
+.Leaderboard ul li .zoom .botBar .downLoad:hover {
+    color: red;
+}
+
+/*分割线1*/
+.line1 {
+    width: 1px;
+    height: 402px;
+    background-color: #e2e2e2;
+    position: absolute;
+    top: 17px;
+    left: 231px;
+}
+
+/*热门游戏排行榜*/
+.Leaderboard .hotGame {
+    width: 231px;
+    height: 436px;
+    background-color: #fff;
+    position: absolute;
+    left: 232px;
+}
+
+/*分割线2*/
+.line2 {
+    width: 1px;
+    height: 402px;
+    background-color: #e2e2e2;
+    position: absolute;
+    top: 17px;
+    left: 463px;
+}
+
+/*新品手游排行榜*/
+.Leaderboard .newMobileGame {
+    width: 231px;
+    height: 436px;
+    background-color: #fff;
+    position: absolute;
+    left: 464px;
+}
+
+
+/* 主体内容 */
+.main {
+    width: 100%;
+    height: 1403px;
+    background: url(../images/beijing.jpg) no-repeat center 0;
+    position: relative;
+}
+
+.mainBejing2 {
+    width: 100%;
+    height: 395px;
+    background-color: #e6ebea;
+    position: absolute;
+    top: 1008px;
+}
+
+.header {
+    overflow: hidden;
+    height: 380px;
+    position: relative;
+}
+.header h1 {
+    width: 200px;
+    height: 75px;
+    margin-top: 30px;
+}
+.header h1 a {
+    text-indent: -999px;
+    display: block;
+    width: 200px;
+    height: 75px;
+    background: url("../images/nav-copy.png");
+}
+
+.slogn-home {
+    position: absolute;
+    right: 20px;
+    bottom: 30px;
+}
+
+.header .nav {
+    position: absolute;
+    top: 40px;
+    left: 470px;
+    height: 50px;
+}
+.header .nav ul {
+    float: left;
+    font-size: 14px;
+    line-height: 20px;
+
+}
+.header .nav ul a {
+    display: block;
+    width: 100px;
+    height: 20px;
+    color: #525252;
+}
+.header .nav ul a:hover {
+    color: #00a396;
+}
+.header .nav .home {
+    background: url("../images/nav-copy.png") 0 -168px;
+    display: block;
+    width: 100px;
+    height: 30px;
+}
+.header .nav .news {
+    background: url("../images/nav-copy.png") -115px -168px;
+    width: 100px;
+    height: 30px;
+    margin-bottom: 10px;
+}
+.header .nav .introduce {
+    background: url("../images/nav-copy.png") -230px -168px;
+    width: 100px;
+    height: 30px;
+    margin-bottom: 10px;
+}
+.header .nav .download {
+    background: url("../images/nav-copy.png") -460px -168px;
+    width: 100px;
+    height: 30px;
+    margin-bottom: 10px;
+}
+.header .nav .interactive {
+    background: url("../images/nav-copy.png") -575px -168px;
+    width: 100px;
+    height: 30px;
+    margin-bottom: 10px;
+}
+.header .nav .user_center {
+    background: url("../images/nav-copy.png") -690px -168px;
+    width: 100px;
+    height: 30px;
+    margin-bottom: 10px;
+}
+.header .nav .vision {
+    background: url("../images/nav-copy.png") -805px -168px;
+    width: 100px;
+    height: 30px;
+    margin-bottom: 10px;
+}
+.header .nav .service {
+    background: url("../images/nav-copy.png") -920px -168px;
+    width: 100px;
+    height: 30px;
+    margin-bottom: 10px;
+}
+
+
+/*活动中心*/
+.activityCenter {
+    height: 1028px;
+}
+
+/* 活动中心头部activityNav */
+.activityNav {
+    width: 100%;
+    height: 71px;
+    background-color: red;
+    background: url(../images/eventsspr.png);
+    overflow: hidden;
+}
+
+.activityNav .title {
+    width: 225px;
+    height: 24px;
+    background: url(../images/eventsspr.png) -2px -498px;
+    margin-top: 25px;
+    margin-left: 27px;
+    margin-right: 88px;
+    float: left;
+}
+
+.activityNav .dangQian {
+    float: left;
+    width: 125px;
+    height: 100%;
+    background-color: #2fc3a2;
+    line-height: 71px;
+    text-align: center
+}
+
+.activityNav .dangQian a {
+    display: block;
+    width: 125px;
+    height: 71px;
+    color: #fff;
+}
+
+.activityNav .wangQi {
+    float: left;
+    width: 125px;
+    height: 100%;
+    line-height: 71px;
+    text-align: center
+}
+
+.activityNav .wangQi a {
+    display: block;
+    width: 125px;
+    height: 71px;
+    color: #bbbbbb;
+}
+
+.activityNav .location {
+    float: right;
+    width: 250px;
+    height: 100%;
+    line-height: 71px;
+    color: #bbbbbb;
+}
+
+.activityNav .location i.logo {
+    display: block;
+    width: 9px;
+    height: 10px;
+    margin-right: 3px;
+    background: url(../images/eventsspr.png) -591px -170px;
+    margin-top: 30px;
+    float: left;
+}
+
+.activityNav .location i.text {
+    float: left;
+}
+
+/* 活动中心内容 */
+.activityCenter .activityContent {
+    width: 100%;
+    height: 957px;
+    overflow: hidden;
+}
+
+.activityContent li {
+    width: 310px;
+    height: 277px;
+    background-color: #fff;
+    margin-top: 15px;
+    margin-right: 15px;
+    float: left;
+    position: relative;
+}
+
+.activityContent li .activityIntro {
+    width: 310px;
+    height: 0;
+    background-color: #2fc3a2;
+    opacity: 0.9;
+    position: absolute;
+    bottom: 0;
+    overflow: hidden;
+}
+
+.activityIntro a {
+    display: block;
+    width: 240px;
+    height: 242px;
+    padding: 35px 39px 0 31px;
+    overflow: hidden;
+}
+
+.activityIntro a h5 {
+    font-size: 17px;
+    color: #fff;
+}
+
+.activityIntro a p {
+    color: #fff;
+    line-height: 18px;
+    margin-top: 12px;
+}
+
+.activityIntro a i {
+    display: block;
+    margin-top: 116px;
+    font-size: 14px;
+    color: #fff;
+    text-align: center;
+}
+
+.activityContent li h4 {
+    font-size: 16px;
+    color: #01a89a;
+    margin-top: 23px;
+    margin-left: 22px;
+}
+
+.activityContent li p.time {
+    font-size: 11px;
+    color: #b4b4b4;
+    margin-top: 10px;
+    margin-left: 22px;
+}
+
+.activityContent li p.desc {
+    font-size: 11px;
+    color: #6c6c6c;
+    line-height: 18px;
+    margin-top: 9px;
+    margin-left: 22px;
+    margin-right: 24px;
+}
+
+.activityContent li.tag {
+    margin-right: 0;
+}
+
+
+/*底部*/
+.footer_bottom {
+    width: 100%;
+    height: 205px;
+    background-color: #000000;
+}
+
+.footer_logo {
+    width: 1171px;
+    height: 100%;
+    margin: 0 auto;
+}
+
+.beijixing {
+    width: 253px;
+    height: 38px;
+    background: url(../images/sp1.png) -1077px 0;
+    float: left;
+    margin-top: 60px;
+}
+
+.footer_words {
+    float: right;
+    width: 665px;
+    height: 150px;
+    padding-top: 55px;
+}
+
+.footer_words p {
+    color: #3f3f3f;
+}
+
+.footer_words a {
+    color: #3f3f3f;
+}
+
+.footer_words p {
+    margin-bottom: 10px;
+}
+
+.footer_words p.p1 {
+    margin-bottom: 14px;
+}
+
+.footer_words p img {
+    left: 0;
+    bottom: 66px;
+    margin-top: 0;
+    margin-right: 3px;
+}
+
+
+

@@ -1,0 +1,72 @@
+/*
+ *  ³õÊ¼»¯´úÂë
+ */
+
+body,
+div,
+p,
+span,
+a,
+img,
+input,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+i,
+b,
+em,
+ins,
+strong,
+dt,
+dd {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font: 12px/100% "Î¢ÈíÑÅºÚ";
+}
+a {
+    text-decoration: none;
+    color: #000;
+}
+img {
+    border: none;
+    vertical-align: middle;
+}
+input {
+    border: none;
+    outline: none;
+}
+li {
+    list-style: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-weight: 400;
+}
+i,
+b {
+    font-style: normal;
+}
+.clearfix::after {
+    content: '';
+    clear: both;
+    height: 0;
+    display: block;
+    visibility: hidden;
+}
+.clearfix {
+    *zoom: 1;
+}
+.w {
+    width: 1349px;
+    margin: 0 auto;
+}

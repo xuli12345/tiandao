@@ -1,0 +1,159 @@
+/*
+ *  展示页代码
+ */
+
+/*王冠crown的css代码*/
+.crown {
+    height: 43px;
+    background: #ccc;
+    text-align: center;
+    line-height: 43px;
+    color: #333;
+    font-size: 20px;
+}
+
+/*包含contains的css代码*/
+.contains {
+    height: 1052px;
+    background: url("../images/bg-1.jpg");
+    position: relative;
+}
+
+/*log的css代码*/
+.log {
+    position: absolute;
+    left: 40px;
+    top: 40px;
+    width: 172px;
+    height: 61px;
+}
+.log a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: url("../images/allicon.png") left top;
+    text-indent: -9999px;
+}
+
+/*nav的css代码*/
+#nav {
+    position: absolute;
+    top: 0px;
+    left: 50%;
+    width: 371px;
+    height: 214px;
+    margin: 0 0 0 -185px;
+    overflow: hidden;
+}
+#view,
+#bigWorld {
+    float: left;
+    width: 185px;
+    height: 214px;
+}
+#bigWorld {
+    float: right;
+}
+#view-up,
+#view-down,
+#bigWorld-up,
+#bigWorld-down {
+    display: block;
+    width: 185px;
+    height: 214px;
+    background: url("../images/allicon.png") 0 -105px;
+}
+#view-up,
+#bigWorld-up {
+    height: 0;
+}
+#bigWorld-up {
+    background-position: 100% -105px;
+}
+#view-down {
+    background-position: 0 -319px;
+}
+#bigWorld-down {
+    background-position: 100% -319px;
+}
+#nav .line {
+    float: left;
+    width: 0;
+    height: 85px;
+    border-left: 1px dashed #6d6d6d;
+    margin-top: 117px;
+}
+
+/*mv的css代码*/
+#mv {
+    width: 672px;
+    height: 378px;
+    position: absolute;
+    top: 305px;
+    left: 50%;
+    margin-left: -336px;
+    overflow: hidden;
+}
+
+#face,
+#player {
+    display: block;
+    width: 672px;
+    height: 378px;
+}
+#player {
+    height: 0px;
+}
+
+/*presentation的css代码*/
+.presentation {
+    width: 612px;
+    height: 198px;
+    position: absolute;
+    top: 743px;
+    left: 50%;
+    margin-left: -306px;
+    color: #bebebe;
+    font: 16px/22px "KaiTi";
+}
+
+/*fixed的css代码*/
+.fixed {
+    position: fixed;
+    top: 226px;
+    right: 30px;
+    width: 125px;
+    height: 125px;
+    text-align: center;
+}
+.fixed p {
+    line-height: 24px;
+    color: #fff;
+}
+.fixed a {
+    display: block;
+    width: 115px;
+    height: 115px;
+    padding: 5px;
+    background: #fff;
+}
+.fixed a img {
+    width: 115px;
+}
+
+/*foot的css代码*/
+.foot {
+    height: 54px;
+    background: #000;
+    color: #818181;
+    text-align: center;
+    padding: 30px 0;
+}
+.foot p {
+    font-size: 12px;
+    line-height: 18px;
+}
+.foot .links a,
+.foot .declaration a {
+    color: #818181;
+}
